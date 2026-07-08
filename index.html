@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anusha S | Full Stack Developer Portfolio</title>
+  <meta name="description" content="Anusha S — Computer Science Engineering student specializing in Python full-stack development, web technologies and software testing. View projects, skills, education and contact details.">
+  <meta name="keywords" content="Anusha S, Full Stack Developer, Python Developer, React Developer, Software Engineer Portfolio, Computer Science Student, Mysuru">
+  <meta name="author" content="Anusha S">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Anusha S | Full Stack Developer Portfolio">
+  <meta property="og:description" content="Computer Science Engineering student specializing in Python full-stack development, web technologies and software testing.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon (inline SVG, no external file needed) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%2358C4DC%22>&lt;/&gt;</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ PAGE LOADER ============ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__window">
+      <div class="loader__dots"><span></span><span></span><span></span></div>
+      <p class="loader__text"><span class="loader__prompt">$</span> booting_portfolio.exe<span class="loader__cursor">_</span></p>
+      <div class="loader__bar"><div class="loader__bar-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ============ SKIP LINK (ACCESSIBILITY) ============ -->
+  <a href="#home" class="skip-link">Skip to main content</a>
+
+  <!-- ============ NAVIGATION — "EDITOR TAB BAR" ============ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="#home" class="navbar__brand" aria-label="Anusha S — Home">
+        <span class="navbar__brand-icon">&lt;/&gt;</span>
+        <span class="navbar__brand-text">anusha<span class="navbar__brand-dot">.</span>dev</span>
+      </a>
+
+      <nav class="navbar__tabs" id="navTabs" aria-label="Primary navigation">
+        <a href="#home" class="tab active" data-nav>home.html</a>
+        <a href="#about" class="tab" data-nav>about.js</a>
+        <a href="#education" class="tab" data-nav>education.log</a>
+        <a href="#skills" class="tab" data-nav>skills.json</a>
+        <a href="#projects" class="tab" data-nav>projects.jsx</a>
+        <a href="#experience" class="tab" data-nav>experience.md</a>
+        <a href="#certifications" class="tab" data-nav>certs.yaml</a>
+        <a href="#more" class="tab" data-nav>more.txt</a>
+        <a href="#contact" class="tab" data-nav>contact.py</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode" title="Toggle theme">
+          <i class="fa-solid fa-moon" id="themeIconMoon"></i>
+          <i class="fa-solid fa-sun" id="themeIconSun"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+      <a href="#home" class="tab" data-nav><i class="fa-solid fa-house"></i> home.html</a>
+      <a href="#about" class="tab" data-nav><i class="fa-solid fa-user"></i> about.js</a>
+      <a href="#education" class="tab" data-nav><i class="fa-solid fa-graduation-cap"></i> education.log</a>
+      <a href="#skills" class="tab" data-nav><i class="fa-solid fa-code"></i> skills.json</a>
+      <a href="#projects" class="tab" data-nav><i class="fa-solid fa-diagram-project"></i> projects.jsx</a>
+      <a href="#experience" class="tab" data-nav><i class="fa-solid fa-briefcase"></i> experience.md</a>
+      <a href="#certifications" class="tab" data-nav><i class="fa-solid fa-certificate"></i> certs.yaml</a>
+      <a href="#more" class="tab" data-nav><i class="fa-solid fa-layer-group"></i> more.txt</a>
+      <a href="#contact" class="tab" data-nav><i class="fa-solid fa-envelope"></i> contact.py</a>
+    </nav>
+  </header>
+
+  <main id="home">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="hero__glow hero__glow--1"></div>
+        <div class="hero__glow hero__glow--2"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <p class="eyebrow"><span class="eyebrow__prompt">$</span> whoami</p>
+          <h1 class="hero__name">Anusha S</h1>
+          <h2 class="hero__title">
+            <span id="typedText" aria-live="polite"></span><span class="typed-cursor">|</span>
+          </h2>
+          <p class="hero__intro">
+            Motivated Computer Science &amp; Design engineering student who loves turning logic into
+            working software — from Python backends and REST APIs to responsive React interfaces.
+            Currently building full-stack skills through hands-on internship training and hungry for
+            an opportunity to contribute, learn, and ship real products.
+          </p>
+
+          <div class="hero__cta">
+            <a href="#" class="btn btn--primary" id="downloadResumeBtn" download>
+              <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn btn--outline" data-nav>
+              <i class="fa-regular fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+
+          <div class="hero__socials" aria-label="Social media links">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:anusha.s2028@gmail.com" aria-label="Send email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+917349567447" aria-label="Call phone number"><i class="fa-solid fa-phone"></i></a>
+            <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode profile"><i class="fa-solid fa-code"></i></a>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal" aria-hidden="true">
+          <div class="editor-card">
+            <div class="editor-card__bar">
+              <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+              <span class="editor-card__filename">profile.py</span>
+            </div>
+            <div class="editor-card__body">
+              <div class="hero__avatar-wrap">
+                <img src="https://api.dicebear.com/7.x/initials/svg?seed=Anusha%20S&backgroundColor=58c4dc,7ee787,f2b94c&backgroundType=gradientLinear"
+                     alt="Anusha S profile avatar" class="hero__avatar" width="220" height="220" loading="eager">
+              </div>
+              <pre class="editor-card__code"><code><span class="tok-key">class</span> <span class="tok-class">Developer</span>:
+    <span class="tok-func">def</span> <span class="tok-func">__init__</span>(self):
+        self.name = <span class="tok-str">"Anusha S"</span>
+        self.role = <span class="tok-str">"Full-Stack Dev"</span>
+        self.stack = [<span class="tok-str">"Python"</span>, <span class="tok-str">"React"</span>,
+                      <span class="tok-str">"SQL"</span>, <span class="tok-str">"Django"</span>]
+        self.status = <span class="tok-str">"open_to_work"</span> <span class="tok-com"># true</span></code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" data-nav aria-label="Scroll to About section">
+        <span></span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about" aria-label="About Me">
+      <div class="container">
+        <p class="eyebrow reveal"><span class="eyebrow__prompt">$</span> cat about.js</p>
+        <h2 class="section__title reveal">About Me</h2>
+
+        <div class="about__grid">
+          <div class="about__col reveal">
+            <h3 class="about__heading"><i class="fa-solid fa-bullseye"></i> Career Objective</h3>
+            <p>
+              Motivated and enthusiastic student seeking an internship opportunity to apply academic
+              knowledge, learn practical skills, and contribute positively to an organization while
+              gaining real-world software development experience.
+            </p>
+
+            <h3 class="about__heading"><i class="fa-solid fa-user-pen"></i> Professional Summary</h3>
+            <p>
+              Final-year Computer Science and Design engineering student with a strong foundation in
+              Python, web technologies, and databases. Currently undergoing full-stack development
+              training covering Python, Django, HTML, CSS, JavaScript and React.js, alongside practical
+              exposure to API testing and quality assurance. Comfortable working across the stack —
+              from writing clean backend logic to building responsive front-end interfaces — and eager
+              to apply this foundation to real production challenges.
+            </p>
+          </div>
+
+          <div class="about__col reveal">
+            <h3 class="about__heading"><i class="fa-solid fa-bolt"></i> Key Strengths</h3>
+            <ul class="check-list">
+              <li><i class="fa-solid fa-check"></i> Strong grasp of Data Structures &amp; Algorithms and OOP concepts</li>
+              <li><i class="fa-solid fa-check"></i> Quick learner with a structured, logical approach to problem-solving</li>
+              <li><i class="fa-solid fa-check"></i> Hands-on exposure to full-stack development and API testing</li>
+              <li><i class="fa-solid fa-check"></i> Detail-oriented — comfortable writing test cases and bug reports</li>
+              <li><i class="fa-solid fa-check"></i> Collaborative team player with good communication skills</li>
+            </ul>
+
+            <h3 class="about__heading"><i class="fa-solid fa-heart"></i> Interests</h3>
+            <div class="chip-row">
+              <span class="chip">Web Development</span>
+              <span class="chip">Backend Engineering</span>
+              <span class="chip">Software Testing</span>
+              <span class="chip">Problem Solving</span>
+              <span class="chip">UI/UX Design</span>
+              <span class="chip">Open Source</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Animated Counters -->
+        <div class="counters reveal">
+          <div class="counter-card">
+            <span class="counter" data-target="4">0</span><span class="counter-plus">+</span>
+            <p>Certifications</p>
+          </div>
+          <div class="counter-card">
+            <span class="counter" data-target="2">0</span><span class="counter-plus">+</span>
+            <p>Internships</p>
+          </div>
+          <div class="counter-card">
+            <span class="counter" data-target="6">0</span><span class="counter-plus">+</span>
+            <p>Core Skills</p>
+          </div>
+          <div class="counter-card">
+            <span class="counter" data-target="3">0</span><span class="counter-plus">+</span>
+            <p>Projects Built</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION (TIMELINE) ============ -->
+    <section class="section section--alt" id="education" aria-label="Education">
+      <div class="container">
+        <p class="eyebrow reveal"><span class="eyebrow__prompt">$</span> git log education.log</p>
+        <h2 class="section__title reveal">Education</h2>
+
+        <div class="timeline">
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <span class="timeline__year">2019 – 2020</span>
+              <h3>Secondary School (Class X)</h3>
+              <p class="timeline__org">Presentation Public School, Mysuru</p>
+              <p class="timeline__meta">Board: Central Board of Secondary Education (CBSE)</p>
+              <p class="timeline__score"><i class="fa-solid fa-chart-simple"></i> Percentage: 90% <span class="placeholder-tag">placeholder</span></p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <span class="timeline__year">2020 – 2022</span>
+              <h3>Pre-University Course (PCMB)</h3>
+              <p class="timeline__org">BGS Girls PU College, Mysuru</p>
+              <p class="timeline__meta">Board: Board of Intermediate Education — Physics, Chemistry, Mathematics, Biology</p>
+              <p class="timeline__score"><i class="fa-solid fa-chart-simple"></i> Percentage: 85% <span class="placeholder-tag">placeholder</span></p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__dot timeline__dot--active"></div>
+            <div class="timeline__card timeline__card--active">
+              <span class="timeline__year">2022 – 2026 <span class="badge-live">In Progress</span></span>
+              <h3>Bachelor of Engineering — Computer Science &amp; Design</h3>
+              <p class="timeline__org">Mysore University School of Engineering</p>
+              <p class="timeline__meta">Specialization: Computer Science and Design</p>
+              <p class="timeline__score"><i class="fa-solid fa-chart-simple"></i> CGPA: 8.2 / 10 <span class="placeholder-tag">placeholder</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TECHNICAL SKILLS ============ -->
+    <section class="section" id="skills" aria-label="Technical Skills">
+      <div class="container">
+        <p class="eyebrow reveal"><span class="eyebrow__prompt">$</span> npm run skills --list</p>
+        <h2 class="section__title reveal">Technical Skills</h2>
+
+        <div class="skills__grid">
+          <div class="skills__col reveal">
+            <h3><i class="fa-solid fa-code"></i> Programming Languages</h3>
+            <div class="skill-bar"><div class="skill-bar__top"><span>Python</span><span class="skill-bar__pct">90%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-fill="90"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar__top"><span>C</span><span class="skill-bar__pct">75%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-fill="75"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar__top"><span>C++</span><span class="skill-bar__pct">70%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-fill="70"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar__top"><span>JavaScript</span><span class="skill-bar__pct">80%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-fill="80"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar__top"><span>SQL</span><span class="skill-bar__pct">80%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-fill="80"></div></div></div>
+          </div>
+
+          <div class="skills__col reveal">
+            <h3><i class="fa-solid fa-layer-group"></i> Frameworks &amp; Web Technologies</h3>
+            <div class="skill-bar"><div class="skill-bar__top"><span>HTML5</span><span class="skill-bar__pct">90%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-fill="90"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar__top"><span>CSS3</span><span class="skill-bar__pct">85%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-fill="85"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar__top"><span>React.js</span><span class="skill-bar__pct">70%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-fill="70"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar__top"><span>Django</span><span class="skill-bar__pct">65%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-fill="65"></div></div></div>
+          </div>
+
+          <div class="skills__col reveal">
+            <h3><i class="fa-solid fa-database"></i> Database &amp; Concepts</h3>
+            <div class="skill-bar"><div class="skill-bar__top"><span>RDBMS / SQL Querying</span><span class="skill-bar__pct">80%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-fill="80"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar__top"><span>Data Structures &amp; Algorithms</span><span class="skill-bar__pct">75%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-fill="75"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar__top"><span>Object-Oriented Programming</span><span class="skill-bar__pct">80%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-fill="80"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar__top"><span>REST API Testing</span><span class="skill-bar__pct">75%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-fill="75"></div></div></div>
+          </div>
+        </div>
+
+        <div class="tools-grid reveal">
+          <h3><i class="fa-solid fa-toolbox"></i> Tools, IDEs &amp; Platforms</h3>
+          <div class="chip-row">
+            <span class="chip"><i class="fa-solid fa-laptop-code"></i> VS Code</span>
+            <span class="chip"><i class="fa-solid fa-paper-plane"></i> Postman</span>
+            <span class="chip"><i class="fa-brands fa-git-alt"></i> Git</span>
+            <span class="chip"><i class="fa-brands fa-github"></i> GitHub</span>
+            <span class="chip"><i class="fa-brands fa-windows"></i> Windows</span>
+            <span class="chip"><i class="fa-brands fa-linux"></i> Linux</span>
+            <span class="chip placeholder-chip">MySQL Workbench</span>
+            <span class="chip placeholder-chip">Jupyter Notebook</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS (FILTERABLE GALLERY) ============ -->
+    <section class="section section--alt" id="projects" aria-label="Projects">
+      <div class="container">
+        <p class="eyebrow reveal"><span class="eyebrow__prompt">$</span> ls ./projects --all</p>
+        <h2 class="section__title reveal">Projects</h2>
+
+        <div class="filter-bar reveal" role="tablist" aria-label="Filter projects by technology">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="python">Python</button>
+          <button class="filter-btn" data-filter="react">React</button>
+          <button class="filter-btn" data-filter="testing">Testing</button>
+          <button class="filter-btn" data-filter="database">Database</button>
+        </div>
+
+        <div class="projects__grid" id="projectsGrid">
+
+          <article class="project-card reveal" data-tags="python react database">
+            <div class="project-card__bar">
+              <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+              <span class="project-card__filename">ecommerce-app/</span>
+            </div>
+            <div class="project-card__thumb">
+              <i class="fa-solid fa-cart-shopping project-card__icon"></i>
+            </div>
+            <div class="project-card__body">
+              <h3>Full-Stack E-Commerce Platform <span class="placeholder-tag">sample project</span></h3>
+              <p>
+                A full-stack online storefront built while training in Python full-stack development —
+                product catalog, cart, and order flow backed by a Django REST API and a React front end.
+              </p>
+              <div class="chip-row chip-row--sm">
+                <span class="chip">Python</span><span class="chip">Django</span><span class="chip">React.js</span><span class="chip">SQL</span>
+              </div>
+              <div class="project-card__details">
+                <p><strong>Key Features:</strong> User authentication, product search &amp; filters, shopping cart, order history, admin dashboard.</p>
+                <p><strong>My Role:</strong> Designed REST API endpoints, built React components, connected front end to backend, wrote database schema.</p>
+                <p><strong>Outcome:</strong> Delivered a working end-to-end flow demonstrating full-stack integration skills gained during training.</p>
+              </div>
+              <div class="project-card__links">
+                <a href="#" class="btn btn--sm btn--outline" aria-label="View source code on GitHub"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="#" class="btn btn--sm btn--primary" aria-label="View live demo"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tags="testing">
+            <div class="project-card__bar">
+              <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+              <span class="project-card__filename">api-test-suite/</span>
+            </div>
+            <div class="project-card__thumb">
+              <i class="fa-solid fa-vial project-card__icon"></i>
+            </div>
+            <div class="project-card__body">
+              <h3>REST API Testing Suite <span class="placeholder-tag">sample project</span></h3>
+              <p>
+                A structured Postman collection built to validate REST APIs — covering functional,
+                negative and edge-case testing, modeled on real workflows from an API testing internship.
+              </p>
+              <div class="chip-row chip-row--sm">
+                <span class="chip">Postman</span><span class="chip">REST APIs</span><span class="chip">Manual Testing</span>
+              </div>
+              <div class="project-card__details">
+                <p><strong>Key Features:</strong> Organized test collections, environment variables, automated assertions, exportable bug reports.</p>
+                <p><strong>My Role:</strong> Wrote test cases, executed manual &amp; automated checks, logged and tracked bugs to closure.</p>
+                <p><strong>Outcome:</strong> Improved understanding of QA workflows and API contract validation.</p>
+              </div>
+              <div class="project-card__links">
+                <a href="#" class="btn btn--sm btn--outline" aria-label="View source code on GitHub"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="#" class="btn btn--sm btn--primary" aria-label="View live demo"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tags="python database">
+            <div class="project-card__bar">
+              <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+              <span class="project-card__filename">student-mgmt-system/</span>
+            </div>
+            <div class="project-card__thumb">
+              <i class="fa-solid fa-users-gear project-card__icon"></i>
+            </div>
+            <div class="project-card__body">
+              <h3>Student Management System <span class="placeholder-tag">sample project</span></h3>
+              <p>
+                A console-based Python application applying OOP principles and SQL to manage student
+                records — add, update, search and generate reports with persistent storage.
+              </p>
+              <div class="chip-row chip-row--sm">
+                <span class="chip">Python</span><span class="chip">OOP</span><span class="chip">SQL</span>
+              </div>
+              <div class="project-card__details">
+                <p><strong>Key Features:</strong> CRUD operations, input validation, normalized database schema, report generation.</p>
+                <p><strong>My Role:</strong> Designed the database schema, implemented core logic using OOP, handled exceptions gracefully.</p>
+                <p><strong>Outcome:</strong> Solidified understanding of Python fundamentals, file/exception handling and relational databases.</p>
+              </div>
+              <div class="project-card__links">
+                <a href="#" class="btn btn--sm btn--outline" aria-label="View source code on GitHub"><i class="fa-brands fa-github"></i> GitHub</a>
+                <span class="btn btn--sm btn--disabled" aria-disabled="true">No Live Demo</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INTERNSHIPS / EXPERIENCE (TIMELINE) ============ -->
+    <section class="section" id="experience" aria-label="Internships and Training">
+      <div class="container">
+        <p class="eyebrow reveal"><span class="eyebrow__prompt">$</span> tail -f experience.md</p>
+        <h2 class="section__title reveal">Internships &amp; Training</h2>
+
+        <div class="timeline timeline--exp">
+          <div class="timeline__item reveal">
+            <div class="timeline__dot timeline__dot--active"></div>
+            <div class="timeline__card timeline__card--active">
+              <span class="timeline__year">Ongoing <span class="badge-live">Current</span></span>
+              <h3>Python Full Stack Development Trainee</h3>
+              <p class="timeline__org">QSpiders, Mysuru</p>
+              <div class="chip-row chip-row--sm">
+                <span class="chip">Python</span><span class="chip">Django</span><span class="chip">HTML/CSS/JS</span><span class="chip">React.js</span><span class="chip">REST APIs</span>
+              </div>
+              <ul class="check-list">
+                <li><i class="fa-solid fa-check"></i> Learning backend development using Python and the Django framework</li>
+                <li><i class="fa-solid fa-check"></i> Developing front-end skills with HTML, CSS, JavaScript and React.js</li>
+                <li><i class="fa-solid fa-check"></i> Working on full-stack projects with REST API integration</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <span class="timeline__year">Completed</span>
+              <h3>Application &amp; API Testing Intern</h3>
+              <p class="timeline__org">IVIS Labs</p>
+              <div class="chip-row chip-row--sm">
+                <span class="chip">Postman</span><span class="chip">Manual Testing</span><span class="chip">QA</span>
+              </div>
+              <ul class="check-list">
+                <li><i class="fa-solid fa-check"></i> Performed API testing using Postman and learned professional testing workflows</li>
+                <li><i class="fa-solid fa-check"></i> Created and executed detailed test cases and bug reports</li>
+                <li><i class="fa-solid fa-check"></i> Gained hands-on knowledge of manual testing and software quality assurance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section class="section section--alt" id="certifications" aria-label="Certifications">
+      <div class="container">
+        <p class="eyebrow reveal"><span class="eyebrow__prompt">$</span> cat certs.yaml</p>
+        <h2 class="section__title reveal">Certifications</h2>
+
+        <div class="cert-grid">
+          <div class="cert-card reveal">
+            <i class="fa-solid fa-certificate cert-card__icon"></i>
+            <h3>Python Full Stack Development</h3>
+            <p>QSpiders</p>
+          </div>
+          <div class="cert-card reveal">
+            <i class="fa-solid fa-certificate cert-card__icon"></i>
+            <h3>Application &amp; API Testing</h3>
+            <p>IVIS Labs</p>
+          </div>
+          <div class="cert-card reveal">
+            <i class="fa-solid fa-certificate cert-card__icon"></i>
+            <h3>C Programming</h3>
+            <p>Vision Computers</p>
+          </div>
+          <div class="cert-card reveal">
+            <i class="fa-solid fa-certificate cert-card__icon"></i>
+            <h3>Computer Applications</h3>
+            <p>Vision Computers</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MORE: ACHIEVEMENTS, WORKSHOPS, HACKATHONS, CODING PROFILES, SOFT SKILLS, LANGUAGES, HOBBIES ============ -->
+    <section class="section" id="more" aria-label="Achievements and additional information">
+      <div class="container">
+        <p class="eyebrow reveal"><span class="eyebrow__prompt">$</span> more more.txt</p>
+        <h2 class="section__title reveal">Achievements &amp; More</h2>
+
+        <div class="more__grid">
+
+          <div class="more__card reveal">
+            <h3><i class="fa-solid fa-trophy"></i> Achievements <span class="placeholder-tag">placeholder</span></h3>
+            <ul class="check-list">
+              <li><i class="fa-solid fa-star"></i> Recognized for consistent academic performance in engineering coursework</li>
+              <li><i class="fa-solid fa-star"></i> Appreciation for proactive contribution during internship training</li>
+            </ul>
+          </div>
+
+          <div class="more__card reveal">
+            <h3><i class="fa-solid fa-chalkboard-user"></i> Workshops <span class="placeholder-tag">placeholder</span></h3>
+            <ul class="check-list">
+              <li><i class="fa-solid fa-check"></i> Web Development Workshop — HTML, CSS &amp; JavaScript Fundamentals</li>
+              <li><i class="fa-solid fa-check"></i> Introduction to REST APIs &amp; Postman Workshop</li>
+            </ul>
+          </div>
+
+          <div class="more__card reveal">
+            <h3><i class="fa-solid fa-laptop-code"></i> Hackathons <span class="placeholder-tag">placeholder</span></h3>
+            <ul class="check-list">
+              <li><i class="fa-solid fa-check"></i> Participant, Campus-Level Coding Hackathon — built a mini web app in 24 hours</li>
+            </ul>
+          </div>
+
+          <div class="more__card reveal">
+            <h3><i class="fa-solid fa-code-branch"></i> Coding Profiles <span class="placeholder-tag">placeholder</span></h3>
+            <div class="chip-row chip-row--sm">
+              <a href="#" class="chip chip--link"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="chip chip--link"><i class="fa-solid fa-code"></i> LeetCode</a>
+              <a href="#" class="chip chip--link"><i class="fa-solid fa-hashtag"></i> HackerRank</a>
+              <a href="#" class="chip chip--link"><i class="fa-brands fa-codepen"></i> CodeChef</a>
+            </div>
+          </div>
+
+          <div class="more__card reveal">
+            <h3><i class="fa-solid fa-people-arrows"></i> Soft Skills <span class="placeholder-tag">placeholder</span></h3>
+            <div class="chip-row chip-row--sm">
+              <span class="chip">Communication</span>
+              <span class="chip">Teamwork</span>
+              <span class="chip">Adaptability</span>
+              <span class="chip">Time Management</span>
+              <span class="chip">Problem Solving</span>
+            </div>
+          </div>
+
+          <div class="more__card reveal">
+            <h3><i class="fa-solid fa-language"></i> Languages Known <span class="placeholder-tag">placeholder</span></h3>
+            <div class="chip-row chip-row--sm">
+              <span class="chip">English</span>
+              <span class="chip">Kannada</span>
+              <span class="chip">Hindi</span>
+            </div>
+          </div>
+
+          <div class="more__card reveal">
+            <h3><i class="fa-solid fa-heart"></i> Hobbies &amp; Interests <span class="placeholder-tag">placeholder</span></h3>
+            <div class="chip-row chip-row--sm">
+              <span class="chip">Reading Tech Blogs</span>
+              <span class="chip">Sketching</span>
+              <span class="chip">Badminton</span>
+              <span class="chip">Puzzle Solving</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section--alt" id="contact" aria-label="Contact">
+      <div class="container">
+        <p class="eyebrow reveal"><span class="eyebrow__prompt">$</span> python contact.py</p>
+        <h2 class="section__title reveal">Get In Touch</h2>
+        <p class="section__subtitle reveal">Have an opportunity, project, or question? Send a message — I'd love to hear from you.</p>
+
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <div class="contact__info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div><span>Email</span><a href="mailto:anusha.s2028@gmail.com">anusha.s2028@gmail.com</a></div>
+            </div>
+            <div class="contact__info-item">
+              <i class="fa-solid fa-phone"></i>
+              <div><span>Phone</span><a href="tel:+917349567447">+91 73495 67447</a></div>
+            </div>
+            <div class="contact__info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div><span>Location</span><a href="#">Mysuru, Karnataka, India</a></div>
+            </div>
+            <div class="hero__socials contact__socials">
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fa-brands fa-github"></i></a>
+              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode profile"><i class="fa-solid fa-code"></i></a>
+            </div>
+          </div>
+
+          <form class="contact__form reveal" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+              <span class="form-error" id="subjectError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block" id="submitBtn">
+              <i class="fa-regular fa-paper-plane"></i> Send Message
+            </button>
+            <p class="form-success" id="formSuccess" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="navbar__brand-icon">&lt;/&gt;</span> anusha<span class="navbar__brand-dot">.</span>dev
+      </div>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="#home" data-nav>Home</a>
+        <a href="#about" data-nav>About</a>
+        <a href="#projects" data-nav>Projects</a>
+        <a href="#contact" data-nav>Contact</a>
+      </nav>
+      <div class="footer__socials">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:anusha.s2028@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <p class="footer__copy">&copy; <span id="year"></span> Anusha S. Built with HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <!-- ============ SCROLL TO TOP ============ -->
+  <button id="scrollTopBtn" class="scroll-top" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
